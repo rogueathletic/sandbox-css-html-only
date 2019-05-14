@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Animating 3D Transforms</title>
+     <link href="styles.css" type="text/css" media="all" rel="Stylesheet"/>
+<html>
+
+  <head>
+    <title>I M A &nbsp; P N G</title>
+    <link rel="stylesheet" href="styles.css" media="all" />
+    
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=monserrat:400,900,300,300italic,400italic,900italic);
+
+.body {
+	background-color: #555555; 
+	background-image: url();
+	background-size: cover;
+	background-position: 0 -50px;
+	font-family: 'Lato', monserrat, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.wrapper {
+	margin: 12em auto 2em auto;
+	width: 80%;
+	position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+
+
+button {
+	cursor: hand;
+	background-color: rgba(51, 174, 174, 0);
+	color: white;
+	font-weight: 900;
+	font-size: 1.2rem;
+	border: none;
+	padding: 1em 3em;
+	margin: 2em auto;
+	display: block;
+  border-radius: 3px 3px 15px 3px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+	transition: background 0.9s ease-in, transform 0.7s 0.25s ease-in-out;
+}
+
+button:hover {
+	background: rgba(85, 85, 85, 1);
+	transform: scale(1.2);
+}
+
+p {
+   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+   background-color: rgba(0, 0, 0, 0.3);
+   border-radius: 3px 3px 15px 3px;
+   margin: -60vh 0 0 0;
+   padding: 4em 1em 2em 1em;
+   	color: white;
+	text-align: center;
+  text-decoration: none!important;
+}
+
+
+#top {
+  position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 2px;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+
+#bottom {
+    position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 2px;
+  width: 100vw;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#left {
+      position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+#right {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+
+#right2 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right3 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: 20px 0 0 20px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right3 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -20px 0 0 -20px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right4 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -40px 0 0 -40px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right5 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -60px 0 0 -60px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right6 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -80px 0 0 -80px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right7 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -100px 0 0 -100px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right8 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -120px 0 0 -120px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#right9 {
+        position: fixed;
+  z-index: 999;
+  background-color: #55aeae;
+  height: 100vh;
+  margin: -140px 0 0 -140px;
+  width: 2px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+    </style>
+  </head>
+
+  <body class="body">
+  <br>
+    <div id="bottom">&nbsp;</div>
+    <div id="top">&nbsp;</div>
+    <div id="right">&nbsp;</div>
+    <div id="left">&nbsp;</div>
+
+    <div id="right2">&nbsp;</div>
+    <div id="right3">&nbsp;</div>
+    <div id="right4">&nbsp;</div>
+    <div id="right5">&nbsp;</div>
+    <div id="right6">&nbsp;</div>
+    <div id="right7">&nbsp;</div>
+    <div id="right8">&nbsp;</div>
+    <div id="right9">&nbsp;</div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="983" height="917" viewBox="0 0 983 917">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #33aeae;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <image id="svg1" width="983" height="317" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9cAAAOVAQMAAABZKYENAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX35P4AAAAWHZDlAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAIVJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4NvDsAATQXs18AAAAASUVORK5CYII="/>
+  <path class="cls-1" d="M-1,279L984,9V640L-1,910V279Z"/>
+</svg>
+    <div class="wrapper">
+      <h2></h2>
+      <p>Hello, <br> My Name Is <em>Ima</em> <em>Basetemplate</em> III. <br><br> I was once an .ai but now Ima B. is Ima .Svg</p>
+      <button>Nice to meet you</button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="983" height="917" viewBox="0 0 983 917">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #33aeae;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <image id="svg2" class="body" width="983" height="917" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9cAAAOVAQMAAABZKYENAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX35P4AAAAWHZDlAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAIVJREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4NvDsAATQXs18AAAAASUVORK5CYII="/>
+  <path class="cls-1" d="M-1,279L984,9V640L-1,910V279Z"/>
+</svg>
+  </body>
+
+</html>
